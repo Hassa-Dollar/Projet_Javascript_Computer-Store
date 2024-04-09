@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="creerCommunaute.js" defer></script>
+    <script src="Item.js" defer></script>
+    <script src="validation.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary p-4 fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="Logo" class="d-inline-block align-text-top mx-4 logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link fs-5 coul" aria-current="page" href="index.html">Maison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="magasin.html">Magasin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="communaute.html">Magasin-communautaire</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="bg-light " style="padding-bottom: 170px; padding-top: 280px">
+    <div class="container text-center">
+        <h1 class="display-4 text-black" style="text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);">Notre communaute c'est un lieu d'echange ou vous pourriez trouver des offres a sauter dessus!</h1>
+        <p style="font-size: 24px">Que vous soyez vendeur ou acheteur au bas de la page vous verrez un formulaire vous permettant de mettre de nouveaux articles en vente!</p>
+    </div>
+</div>
+
+<div class="bg-dark text-light py-5" style="padding-top: 180px;">
+    <div class="container text-center">
+        <h1 class="display-4 mb-4" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); font-family: 'Roboto', sans-serif; color: #00c2ff;">Sélection communautaire de cartes graphiques</h1>
+        <p class="lead mb-0" style="font-size: 20px; font-family: 'Roboto', sans-serif; color: #f0f0f0;">Les cartes graphiques jouent un rôle crucial dans la génération et la qualité du traitement graphique.</p>
+    </div>
+</div>
+
+<div id="carte-commu" class="flex items" style="flex-wrap: wrap"></div>
+
+<p class="alert alert-danger d-none" role="alert"></p>
+
+<div class="bg-dark text-light py-5" style="padding-top: 180px;">
+    <div class="container text-center">
+        <h1 class="display-4 mb-4" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); font-family: 'Roboto', sans-serif; color: #00c2ff;">Sélection communautaire de processeur</h1>
+        <p class="lead mb-0" style="font-size: 20px; font-family: 'Roboto', sans-serif; color: #f0f0f0;">Le processuer c'est comme le cerveau, il permet d'executer les instructions et les programmes pour le fonctionnement complet du system.</p>
+    </div>
+</div>
+
+<div id="cpu-commu" class="flex items" style="flex-wrap: wrap"></div>
+
+<p class="alert alert-danger d-none" role="alert"></p>
+
+<div class="bg-dark text-light py-5" style="padding-top: 180px;">
+    <div class="container text-center">
+        <h1 class="display-4 mb-4" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); font-family: 'Roboto', sans-serif; color: #00c2ff;">Sélection communautaire de cartes mere</h1>
+        <p class="lead mb-0" style="font-size: 20px; font-family: 'Roboto', sans-serif; color: #f0f0f0;">La cartes mere c'est la piece centrale qui permet la connection entre chaque piece.</p>
+    </div>
+</div>
+
+<div id="board-commu" class="flex items" style="flex-wrap: wrap"></div>
+
+<p class="alert alert-danger d-none" role="alert"></p>
+
+<div class="bg-dark text-light py-5" style="padding-top: 180px;">
+    <div class="container text-center">
+        <h1 class="display-4 mb-4" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); font-family: 'Roboto', sans-serif; color: #00c2ff;">Votre panier</h1>
+    </div>
+</div>
+
+<div id="panier1" class="flex items container" style="flex-wrap: wrap"></div>
+
+<p class="alert alert-danger d-none" role="alert"></p>
+
+<button type="button" onclick="Confirmer2()" class="btn btn-primary m-5">Commander</button>
+
+<p class="ligne2"></p>
+
+<form class="box" id="form2">
+    <h1>Formulaire pour ajout d'articles</h1>
+    <div class="mb-3">
+        <label for="marque" class="form-label">Marque</label>
+        <input type="text" class="form-control" id="marque" minlength="1" maxlength="50">
+        <p id="erreur5" class="m-3 w-100  alert alert-danger d-none">La marque doit commencer par une majuscule et ne peut contenir de charactere speciaux ou chiffre</p>
+    </div>
+    <div class="mb-3">
+        <label for="model" class="form-label">Model</label>
+        <input type="text" class="form-control" id="model" minlength="1" maxlength="50">
+        <p id="erreur6" class="m-3 w-100  alert alert-danger d-none">Le model doit commencer par une majuscule et ne peut contenir de charactere speciaux ou chiffre</p>
+    </div>
+    <div class="mb-3">
+        <label for="type" class="form-label">Type de piece</label>
+        <select id="type" class="form-select">
+            <option value="Carte graphique">Carte graphique</option>
+            <option value="Processeur">Processeur</option>
+            <option value="Carte mere">Carte mere</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="prix" class="form-label">Prix de l'article</label>
+        <input type="number" class="form-control" min="1" id="prix">
+        <p id="erreur8" class="m-3 w-100  alert alert-danger d-none">Le prix doit etre entre 1$ et 3000$ inclusivement</p>
+    </div>
+    <div class="mb-3">
+        <label for="url" class="form-label">Url de l'image</label>
+        <input type="text" class="form-control" id="url">
+        <p id="erreur7" class="m-3 w-100  alert alert-danger d-none">L'url doit commencer par http:// ou https:// et finir par .png ou .jpg</p>
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" required id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Mes informations sont valides</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Ajouter</button>
+</form>
+
+<footer class="footer mt-auto py-3">
+    <div class="container p-3">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; 2024 Computer Store</p>
+            </div>
+            <div class="col-md-6 text-md-right">
+                <p>
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms of Service</a> |
+                    <a href="#">Contact Us</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

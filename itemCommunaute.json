@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "marque": "Msi",
+    "model": "Rtx 2070",
+    "type": "Carte graphique",
+    "prix": 449.99,
+    "url": "https://m.media-amazon.com/images/I/81gMSSOWL7L.jpg"
+  },
+  {
+    "id": "2",
+    "marque": "Gigabyte",
+    "model": "Gtx 1080",
+    "type": "Carte graphique",
+    "prix": 299.99,
+    "url": "https://static.gigabyte.com/StaticFile/Image/Global/5865dda2c8ac6d378e755169f1f0894b/Product/15095/Png"
+  },
+  {
+    "id": "3",
+    "marque": "AMD",
+    "model": "Ryzen 5 5600x",
+    "type": "Processeur",
+    "prix": 239.99,
+    "url": "https://media.ldlc.com/r1600/ld/products/00/05/74/59/LD0005745995_1.jpg"
+  },
+  {
+    "id": "4",
+    "marque": "Intel",
+    "model": "i7 7700k",
+    "type": "Processeur",
+    "prix": 185.99,
+    "url": "https://c1.neweggimages.com/ProductImage/19-117-726-Z01.jpg"
+  },
+  {
+    "id": "5",
+    "marque": "Msi",
+    "model": "Mpg Z390 gaming pro",
+    "type": "Carte mere",
+    "prix": 256.99,
+    "url": "https://c1.neweggimages.com/ProductImageCompressAll1280/13-144-212-V01.jpg"
+  },
+  {
+    "id": "6",
+    "marque": "Msi",
+    "model": "Pro B550-A AM4",
+    "type": "Carte mere",
+    "prix": 149.99,
+    "url": "https://c1.neweggimages.com/ProductImageCompressAll1280/13-144-330-V16.jpg"
+  }
+]

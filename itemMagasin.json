@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "marque": "Asus",
+    "model": "Rog Strix Rtx 4090",
+    "type": "Carte graphique",
+    "prix": 2789.99,
+    "url": "https://ccimg.canadacomputers.com/Products/1000x1000/230/522/229558/62244.jpg"
+  },
+  {
+    "id": "2",
+    "marque": "Gigabyte",
+    "model": "Rtx 3090",
+    "type": "Carte graphique",
+    "prix": 838.99,
+    "url": "https://static.gigabyte.com/StaticFile/Image/Global/a9904def4f50f769cf5fd48e3d238e7b/Product/25965/Png"
+  },
+  {
+    "id": "3",
+    "marque": "AMD",
+    "model": "Ryzen 9 7900x3d",
+    "type": "Processeur",
+    "prix": 739.99,
+    "url": "https://c1.neweggimages.com/productimage/nb640/19-113-791-03.png"
+  },
+  {
+    "id": "4",
+    "marque": "Intel",
+    "model": "i9 14900k",
+    "type": "Processeur",
+    "prix": 799.99,
+    "url": "https://www.pcczone.ca/pub/media/catalog/product/cache/ca797e431b4922766da5b9636f5982e3/1/4/14thgeni9_1.jpg"
+  },
+  {
+    "id": "5",
+    "marque": "Asus",
+    "model": "Rog Strix Z790-H Gaming",
+    "type": "Carte mere",
+    "prix": 479.99,
+    "url": "https://c1.neweggimages.com/ProductImageCompressAll1280/13-119-635-02.png"
+  },
+  {
+    "id": "6",
+    "marque": "Msi",
+    "model": "Mag X670E Tomahawk",
+    "type": "Carte mere",
+    "prix": 419.99,
+    "url": "https://c1.neweggimages.com/ProductImageCompressAll1280/13-144-595-06.png"
+  }
+]

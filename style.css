@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.logo {
+    width:100px;
+    height:100px;
+}
+
+.push{
+    margin-left: 80px;
+}
+
+.annonce {
+    padding: 20px;
+    border: solid black 2px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 1px #6e6c6c;
+}
+
+.cube{
+    border-radius: 15px;
+    box-shadow: 0px 0px 50px 1px #313030;
+}
+
+.space{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.push2{
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.box{
+    border: 1px black solid;
+    padding: 50px;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 1px #313030;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.footer {
+    background-color: gray;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin-bottom: 0;
+    color: white;
+
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.items {
+    padding: 80px;
+}
+
+.ligne2 {
+    border: lightgray solid 2px;
+    margin: 55px;
+}
+
+/* je laisse ceci en commentaire pour montrer la Mise en évidence de la validation avec CSS mais non activer, car ca pertube le fonctionnement de mes messages d'erreur et de succes
+input:invalid:focus{
+    background-color: rgba(255, 80, 80, 0.16);
+}
+
+input:focus:valid{
+    background-color: rgba(176, 255, 80, 0.2);
+}
+ */
+
+@media (max-width:1240px) {
+
+    .push2{
+        margin-top: 80px;
+        margin-bottom: 215px;
+    }
+
+    .colRes{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .push{
+        margin-top: 70px;
+        margin-left: 0;
+    }
+
+    .haut{
+        height: 300px;
+    }
+
+    .ligne{
+        border: lightgray solid 2px;
+        margin: 55px;
+    }
+
+    .box{
+        border: 1px black solid;
+        padding: 50px;
+        width: 70%;
+        margin: 0 auto;
+        border-radius: 15px;
+        box-shadow: 0px 0px 20px 1px #313030;
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
+
+    .items {
+        padding: 80px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .dessous{
+        margin-bottom: 50px;
+    }
+
+    .colRes2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+}
+
+@media (min-width:1241px) {
+    .colRes2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 800px;
+        margin: 0 auto;
+    }
+    .push2{
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+}
+
+

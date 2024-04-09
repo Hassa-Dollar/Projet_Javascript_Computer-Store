@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="validation.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary p-4 fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="Logo" class="d-inline-block align-text-top mx-4 logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link fs-5 coul" aria-current="page" href="index.html">Maison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="magasin.html">Magasin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="communaute.html">Magasin-communautaire</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="bg-light " style="padding-bottom: 170px; padding-top: 280px">
+    <div class="container text-center">
+        <h1 class="display-4 text-black" style="text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5); margin-bottom: 25px">Assembler son premier ordinateur peut etre intimidant!</h1>
+        <p style="font-size: 24px">Voici donc 3 videos qui sont fortement recommender a suivre avant de se lancer dans son premier projet</p>
+    </div>
+</div>
+
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <iframe height="660" class="d-block w-100" height="315" src="https://www.youtube.com/embed/d86ws7mQYIg?si=0-xIJ4ttwQDFhyQP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Premiere video informative</h5>
+                <p>Avec cette video vous allez comprendre beaucoup mieux les pieces requises pour un ordinateur</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <iframe height="660" class="d-block w-100"  src="https://www.youtube.com/embed/sLWXvNbJMpw?si=d1Y0tDj5VPOrc4Jq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Deuxieme video informative</h5>
+                <p>Avec cette video vous allez apprendre plus en detail comment assembler un ordinateur ses relation</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <iframe  height="660" class="d-block w-100" src="https://www.youtube.com/embed/xhHtHMQygzE?si=SRgxsjwr_59mDh_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Troisieme video informative</h5>
+                <p>Cette video va vous expliquer les etapes a suivre apres avoir assembler votre premier pc tel que update le bio et insataller windows</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="flex colRes container p-5" style="margin-top: 70px">
+    <img class="cube" src="img/online_shopping.jpg">
+    <div class="text-center flex push space haut">
+        <h2 class="text-black">Magasinez en ligne n'a jamais ete autant facile!</h2>
+        <p class="annonce">Des offres incroyables, vous n'en croirez pas vos yeux et cela exlusiment chez Computer store</p>
+        <a href="magasin.html">
+            <button type="button" class="btn btn-success" >Voire notre inventaire!</button>
+        </a>
+    </div>
+</div>
+
+<p class="ligne"></p>
+
+<div class="flex colRes container p-5" style="margin-top: 70px">
+    <img class="cube" src="img/community.jpg">
+    <div class="text-center flex push space haut">
+        <h2 class="text-black">En rejoignant notre communaute vous pourriez trouver des offres encore plus exclusifs!</h2>
+        <p class="annonce">Une communaute c'est le coeur de l'entreprise et Computer store vous offre une communaute de gens autant passionner que vous</p>
+        <a href="communaute.html">
+            <button type="button" class="btn btn-success" onclick="">Voire l'inventaire de la communaute!</button>
+        </a>
+    </div>
+</div>
+
+<p class="ligne"></p>
+
+<div class="flex colRes2 p-5 " style="margin-top: 70px;">
+    <img class="cube" src="img/pc.jpg">
+
+    <div class="text-center flex space haut push2">
+        <h2 class="text-black">Encore confus, coincer mi-chemin ou bien rien ne fonctionne au premier allumage</h2>
+        <h1 style="font-size: 75px">?</h1>
+        <p class="annonce">Ceci est tres normale et peut arriver au meilleur des techniciens heureusement pour vous, vous n'avez qu'a remplir le formulaire ci-dessous et un de nos experts vous rejoindra sous-peu</p>
+    </div>
+
+    <img class="cube" src="img/parts.jpg">
+</div>
+
+<form class=" box" id="form1">
+    <h1>Formulaire pour demande de support</h1>
+    <div class="mb-3">
+        <label for="prenom" class="form-label">Prenom</label>
+        <input type="text" class="form-control" id="prenom" minlength="1" maxlength="50">
+        <p id="erreur" class="m-3 w-100  alert alert-danger d-none">Le Nom doit commencer par une majuscule et ne peut contenir de charactere speciaux ou chiffre</p>
+    </div>
+    <div class="mb-3">
+        <label for="nom" class="form-label">Nom</label>
+        <input type="text" class="form-control" id="nom" minlength="1" maxlength="50">
+        <p id="erreur2" class="m-3 w-100  alert alert-danger d-none">Le Prenom doit commencer par une majuscule et ne peut contenir de charactere speciaux ou chiffre</p>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" minlength="1" maxlength="50">
+        <div id="emailHelp" class="form-text">Vos information restent confidentiel</div>
+        <p id="erreur3" class="m-3 w-100  alert alert-danger d-none">Veuillez entrer un email valide</p>
+    </div>
+    <div class="mb-3">
+        <label for="tele" class="form-label">Telephone</label>
+        <input type="text" class="form-control" id="tele">
+        <p id="erreur4" class="m-3 w-100  alert alert-danger d-none">Veuillez entrer un numero de telephone valide dans ce format X-(XXX)-XXX-XXXX</p>
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" required id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Mes informations sont valides</label>
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="info">
+        <label class="form-check-label" for="info">S'abonner a notre infolettre</label>
+        <p id="succes" class="m-3 w-100  alert alert-success d-none">Parfait vos informations sont valide, un de nos techniciens vous contactera sous-peu!</p>
+    </div>
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+</form>
+
+<footer class="footer mt-auto py-3">
+    <div class="container p-3">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; 2024 Computer Store</p>
+            </div>
+            <div class="col-md-6 text-md-right">
+                <p>
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms of Service</a> |
+                    <a href="#">Contact Us</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

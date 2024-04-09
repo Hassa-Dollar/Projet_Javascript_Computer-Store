@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="creerMagasin.js" defer></script>
+    <script src="Item.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary p-4 fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="Logo" class="d-inline-block align-text-top mx-4 logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link fs-5 coul" aria-current="page" href="index.html">Maison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="magasin.html">Magasin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="communaute.html">Magasin-communautaire</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="bg-dark text-light py-5" style="padding-top: 180px; margin-top: 160px">
+    <div class="container text-center">
+        <h1 class="display-4 mb-4" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); font-family: 'Roboto', sans-serif; color: #00c2ff;">Notre sélection de cartes graphiques</h1>
+        <p class="lead mb-0" style="font-size: 20px; font-family: 'Roboto', sans-serif; color: #f0f0f0;">Les cartes graphiques jouent un rôle crucial dans la génération et la qualité du traitement graphique.</p>
+    </div>
+</div>
+
+<div id="carte" class="flex items" style="flex-wrap: wrap"></div>
+
+<p class="alert alert-danger d-none" role="alert"></p>
+
+<div class="bg-dark text-light py-5" style="padding-top: 180px;">
+    <div class="container text-center">
+        <h1 class="display-4 mb-4" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); font-family: 'Roboto', sans-serif; color: #00c2ff;">Notre sélection de processeur</h1>
+        <p class="lead mb-0" style="font-size: 20px; font-family: 'Roboto', sans-serif; color: #f0f0f0;">Le processuer c'est comme le cerveau, il permet d'executer les instructions et les programmes pour le fonctionnement complet du system.</p>
+    </div>
+</div>
+
+<div id="cpu" class="flex items" style="flex-wrap: wrap"></div>
+
+<p class="alert alert-danger d-none" role="alert"></p>
+
+<div class="bg-dark text-light py-5" style="padding-top: 180px;">
+    <div class="container text-center">
+        <h1 class="display-4 mb-4" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); font-family: 'Roboto', sans-serif; color: #00c2ff;">Notre sélection de cartes mere</h1>
+        <p class="lead mb-0" style="font-size: 20px; font-family: 'Roboto', sans-serif; color: #f0f0f0;">La cartes mere c'est la piece centrale qui permet la connection entre chaque piece.</p>
+    </div>
+</div>
+
+<div id="board" class="flex items" style="flex-wrap: wrap"></div>
+
+<p class="alert alert-danger d-none" role="alert"></p>
+
+<div class="bg-dark text-light py-5" style="padding-top: 180px;">
+    <div class="container text-center">
+        <h1 class="display-4 mb-4" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); font-family: 'Roboto', sans-serif; color: #00c2ff;">Votre panier</h1>
+    </div>
+</div>
+
+<div id="panier" class="flex items container" style="flex-wrap: wrap"></div>
+
+<p class="alert alert-danger d-none" role="alert"></p>
+
+<button type="button" onclick="Confirmer()" class="btn btn-primary m-5">Commander</button>
+
+<footer class="footer mt-auto py-3">
+    <div class="container p-3">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; 2024 Computer Store</p>
+            </div>
+            <div class="col-md-6 text-md-right">
+                <p>
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms of Service</a> |
+                    <a href="#">Contact Us</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
